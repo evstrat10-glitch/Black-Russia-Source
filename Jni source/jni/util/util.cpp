@@ -35,7 +35,7 @@ done:
 }
 void CrashLog(const char* fmt, ...);
 #include <stdio.h>
-extern CChatWindow* pChatWindow;
+// extern CThaidWindow* pCthaidWindow;
 #include <algorithm>
 #include "..//cryptors/DUMPLIBRARIES_result.h"
 #include "..//str_obfuscator_no_template.hpp"
