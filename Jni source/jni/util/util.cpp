@@ -34,7 +34,7 @@ done:
 	return address;
 }
 void CrashLog(const char* fmt, ...);
-#include "..//chatWindow.h"
+#include <stdio.h>
 extern CChatWindow* pChatWindow;
 #include <algorithm>
 #include "..//cryptors/DUMPLIBRARIES_result.h"
