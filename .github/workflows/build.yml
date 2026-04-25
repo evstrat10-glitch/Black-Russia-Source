@@ -20,18 +20,16 @@ jobs:
         with:
           ndk-version: r21e
 
-      - name: Clean everything before build
+      - name: Remove ALL dependency files
         run: |
           cd "Jni source"
           rm -rf obj libs
-          find . -name "*.d" -type f -delete
-          find . -name "*.o" -type f -delete
+          find . -type f \( -name "*.d" -o -name "*.o" \) -delete
         shell: bash
 
       - name: Build JNI libraries
         run: |
           cd "Jni source"
-          ndk-build clean
           ndk-build NDK_DEBUG=0 APP_PLATFORM=android-16 APP_STL=c++_shared
         shell: bash
 
