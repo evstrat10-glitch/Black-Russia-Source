@@ -1,4 +1,5 @@
 #include "CCheckFileHash.h"
+#include "SMDFile.h"
 
 bool CCheckFileHash::IsFileValid(SMDFile* pMDFile)
 {
