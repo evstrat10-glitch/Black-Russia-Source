@@ -35,6 +35,7 @@ FILE_LIST += $(wildcard $(LOCAL_PATH)/game/RW/RenderWare.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/gui/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/voice/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/cryptors/*.cpp)
+FILE_LIST += $(wildcard $(LOCAL_PATH)/stubs.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../santrope-tea-gtasa/encryption/*.cpp)
 FILE_LIST += $(wildcard $(LOCAL_PATH)/../santrope-tea-gtasa/encryption/*.c)
 
