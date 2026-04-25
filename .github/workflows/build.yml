@@ -15,15 +15,15 @@ jobs:
           java-version: '17'
           distribution: 'temurin'
 
-      - name: Set up Android NDK
+      - name: Set up Android NDK r21e
         uses: nttld/setup-ndk@v1
         with:
-          ndk-version: r23c
+          ndk-version: r21e
 
-      - name: Build JNI libraries
+      - name: Build JNI libraries with fixed flags
         run: |
           cd "Jni source"
-          ndk-build
+          ndk-build NDK_DEBUG=0 APP_PLATFORM=android-16 APP_STL=c++_shared -j2
 
       - name: Upload libraries
         uses: actions/upload-artifact@v4
