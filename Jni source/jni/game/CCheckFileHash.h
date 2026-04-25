@@ -1,10 +1,10 @@
 #pragma once
 
+struct SMDFile;
+
 class CCheckFileHash
 {
 public:
-    static bool CheckFileHash(const char* szFilePath, const char* szExpectedHash)
-    {
-        return true;
-    }
+    static bool IsFileValid(SMDFile* pMDFile);
+    static bool IsFilesValid();
 };
