@@ -58,7 +58,7 @@
 		app:rcBackgroundColor="#25ffffff"
 		app:rcBackgroundPadding="0dp"
 		app:rcMax="100.0"
-		app:rcProgress="0.0"
+		app:rcProgress="0"
 		app:rcProgressColor="@color/gradient1"
 		app:rcRadius="@dimen/_3sdp"
 		app:rcReverse="false"
