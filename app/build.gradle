@@ -53,12 +53,6 @@ dependencies {
     // SeekArc
     implementation 'com.andreabaccega:com.triggertrap.seekarc:1.0.1'
     
-    // AutoImageSlider
-    implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
-    
-    // P7Zip
-    implementation 'com.hzy:libp7zip:1.7.0'
-    
     // FileDownloader
     implementation 'com.liulishuo.filedownloader:library:1.7.7'
     
@@ -67,7 +61,4 @@ dependencies {
     
     // Firebase Database
     implementation 'com.google.firebase:firebase-database:20.3.1'
-    
-    // P7Zip (lib7z)
-    implementation 'com.hzy:lib7z:1.7.0'
 }
