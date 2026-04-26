@@ -108,10 +108,6 @@
         <enum name="fill" value="0" />
         <enum name="stroke" value="1" />
     </attr>
-     <enum name="fill" value="0" />
-        <enum name="stroke" value="1" />
-    </attr>
+    <attr name="rcReverse" format="boolean" />
 </declare-styleable>
-</resources>
-</declare-styleable>
-</resources>
+    </resources>
