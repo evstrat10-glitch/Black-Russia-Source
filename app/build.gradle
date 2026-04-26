@@ -49,4 +49,25 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // SeekArc
+    implementation 'com.andreabaccega:com.triggertrap.seekarc:1.0.1'
+    
+    // AutoImageSlider
+    implementation 'com.github.smarteist:autoimageslider:1.4.0-appcompat'
+    
+    // P7Zip
+    implementation 'com.hzy:libp7zip:1.7.0'
+    
+    // FileDownloader
+    implementation 'com.liulishuo.filedownloader:library:1.7.7'
+    
+    // CircleProgressBar
+    implementation 'io.github.dinuscxj:circleprogressbar:1.4.1'
+    
+    // Firebase Database
+    implementation 'com.google.firebase:firebase-database:20.3.1'
+    
+    // P7Zip (lib7z)
+    implementation 'com.hzy:lib7z:1.7.0'
 }
