@@ -21,7 +21,7 @@ include $(PREBUILT_STATIC_LIBRARY)
 include $(CLEAR_VARS)
 
 LOCAL_MODULE := sampvoice
-LOCAL_LDLIBS := -llog -lOpenSLES
+LOCAL_LDLIBS := -llog -lOpenSLES -Wl,--unresolved-symbols=ignore-all
 
 LOCAL_C_INCLUDES += $(wildcard $(LOCAL_PATH)/vendor/)
 
