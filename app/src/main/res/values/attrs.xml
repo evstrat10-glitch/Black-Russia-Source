@@ -113,5 +113,25 @@
         <enum name="stroke" value="1" />
     </attr>
     <attr name="rcReverse" format="boolean" />
+    
+    <attr name="rcAnimationSpeedScale" format="float" />
+    <attr name="sliderIndicatorEnabled" format="boolean" />
+    <attr name="sliderIndicatorOrientation" format="enum">
+        <enum name="horizontal" value="0" />
+        <enum name="vertical" value="1" />
+    </attr>
+    <attr name="sliderIndicatorGravity" format="enum">
+        <enum name="top" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="left" value="2" />
+        <enum name="right" value="3" />
+    </attr>
+    <attr name="sliderIndicatorMarginBottom" format="dimension" />
+    <attr name="riv_corner_radius" format="dimension" />
+    <attr name="progress_background_color" format="color" />
+    <attr name="progress_end_color" format="color" />
+    <attr name="drawBackgroundOutsideProgress" format="boolean" />
+    <attr name="progress_shader" format="reference" />
+    <attr name="progress_text_color" format="color" />
 </declare-styleable>
     </resources>
