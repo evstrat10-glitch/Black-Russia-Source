@@ -27,14 +27,8 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     
-    // SeekArc
-    implementation 'com.github.TriggerTap:SeekArc:1.0'
-    
     // RoundCornerProgressBar
     implementation 'com.akexorcist:round-corner-progress-bar:2.1.2'
-    
-    // DoubleClick
-    implementation 'com.github.pedromassango:doubleclick:1.2'
     
     // ColorPickerView
     implementation 'com.github.skydoves:colorpickerview:2.2.4'
