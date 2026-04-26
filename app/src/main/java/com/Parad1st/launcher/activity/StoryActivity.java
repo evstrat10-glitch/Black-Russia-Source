@@ -14,8 +14,8 @@ import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
 import com.byparad1st.game.R;
 import com.byparad1st.launcher.adapter.SliderStoriesAdapter;
 import com.byparad1st.launcher.other.Lists;
-import com.smarteist.autoimageslider.SliderAnimations;
-import com.smarteist.autoimageslider.SliderView;
+// import com.smarteist.autoimageslider.SliderAnimations;
+// import com.smarteist.autoimageslider.SliderView;
 
 public class StoryActivity extends AppCompatActivity {
 
