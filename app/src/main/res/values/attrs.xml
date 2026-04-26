@@ -86,4 +86,24 @@
     <declare-styleable name="SeekArcTheme">
         <attr name="seekArcStyle" format="reference"></attr>
     </declare-styleable>
+
+    <declare-styleable name="RoundCornerProgressBar">
+        <attr name="rcBackgroundColor" format="color" />
+        <attr name="rcSecondaryProgress" format="color" />
+        <attr name="rcProgressColor" format="color" />
+        <attr name="rcProgress" format="integer" />
+        <attr name="rcSecondaryProgressColor" format="color" />
+        <attr name="rcMaxProgress" format="integer" />
+        <attr name="rcRadius" format="dimension" />
+        <attr name="rcRadiusTopLeft" format="dimension" />
+        <attr name="rcRadiusTopRight" format="dimension" />
+        <attr name="rcRadiusBottomLeft" format="dimension" />
+        <attr name="rcRadiusBottomRight" format="dimension" />
+        <attr name="rcStrokeWidth" format="dimension" />
+        <attr name="rcStrokeColor" format="color" />
+        <attr name="rcProgressStyle" format="enum">
+            <enum name="fill" value="0" />
+            <enum name="stroke" value="1" />
+        </attr>
+    </declare-styleable>
 </resources>
