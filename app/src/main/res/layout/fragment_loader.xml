@@ -62,7 +62,7 @@
 		app:rcProgressColor="@color/gradient1"
 		app:rcRadius="@dimen/_3sdp"
 		app:rcReverse="false"
-		app:rcSecondaryProgress="0"
+		app:rcSecondaryProgress="@android:color/transparent"
 		app:rcSecondaryProgressColor="@color/gradient2" />
 
 	<TextView
