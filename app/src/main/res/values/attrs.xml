@@ -96,6 +96,7 @@
     <attr name="rcMaxProgress" format="integer" />
     <attr name="rcMax" format="integer" />
     <attr name="rcMin" format="integer" />
+    <attr name="rcBackgroundPadding" format="dimension" />
     <attr name="rcRadius" format="dimension" />
     <attr name="rcRadiusTopLeft" format="dimension" />
     <attr name="rcRadiusTopRight" format="dimension" />
