@@ -2,23 +2,18 @@ package com.byparad1st.launcher.fragment;
 
 import android.os.Bundle;
 import android.os.Environment;
-
 import android.widget.*;
-
 import androidx.fragment.app.Fragment;
-
 import android.view.View;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-
 import java.io.File;
 import java.util.Formatter;
 
 import com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar;
-
 import com.byparad1st.game.R;
 import com.byparad1st.launcher.other.Utils;
-import com.hzy.libp7zip.P7ZipApi;
+// import com.hzy.libp7zip.P7ZipApi; // Закомментировано — библиотека недоступна
 import com.liulishuo.filedownloader.BaseDownloadTask;
 import com.liulishuo.filedownloader.FileDownloadSampleListener;
 import com.liulishuo.filedownloader.FileDownloader;
@@ -32,10 +27,10 @@ public class LoaderFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View inflate = inflater.inflate(R.layout.fragment_loader, container, false);
         FileDownloader.setup(getActivity());
-        RoundCornerProgressBar progressbar = (RoundCornerProgressBar) inflate.findViewById(R.id.progress_bar);
-        TextView textprogress = (TextView) inflate.findViewById(R.id.loading_percent);
-        TextView textmb = (TextView) inflate.findViewById(R.id.loading_percent);
-        TextView textloading = (TextView) inflate.findViewById(R.id.loading_text);
+        progressbar = (RoundCornerProgressBar) inflate.findViewById(R.id.progress_bar);
+        textprogress = (TextView) inflate.findViewById(R.id.loading_percent);
+        textmb = (TextView) inflate.findViewById(R.id.loading_percent);
+        textloading = (TextView) inflate.findViewById(R.id.loading_text);
         startDownload();
         return inflate;
     }
@@ -64,8 +59,8 @@ public class LoaderFragment extends Fragment {
                         long progressPercent = soFarBytes * 100L / totalBytes;
 
                         textloading.setText("Загрузка файлов игры…");
-                        textprogress.setText(new Formatter().format("%.0f%s", new Object[]{Float.valueOf((int)progressPercent), "%"}).toString());
-                        textmb.setText(new Formatter().format("%s из %s", new Object[]{Utils.bytesIntoHumanReadable(soFarBytes), Utils.bytesIntoHumanReadable(totalBytes)}).toString());
+                        textprogress.setText(new Formatter().format("%.0f%s", Float.valueOf((int)progressPercent), "%").toString());
+                        textmb.setText(new Formatter().format("%s из %s", Utils.bytesIntoHumanReadable(soFarBytes), Utils.bytesIntoHumanReadable(totalBytes)).toString());
                         progressbar.setProgress((int) progressPercent);
                     }
 
@@ -93,7 +88,8 @@ public class LoaderFragment extends Fragment {
                         textloading.setText("Распаковка...");
                         textprogress.setText("2/2");
                         textmb.setText("");
-                        UnZipCache();
+                        // UnZipCache(); // Закомментировано — библиотека P7ZipApi недоступна
+                        afterDownload();
                     }
 
                     @Override
@@ -103,13 +99,15 @@ public class LoaderFragment extends Fragment {
                 });
     }
 
+    /*
+    // Метод UnZipCache закомментирован, так как библиотека P7ZipApi недоступна
     public void UnZipCache(){
         String mInputFilePath = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/black-cache.7z";
         String mOutputPath = Environment.getExternalStorageDirectory().toString();
         new Thread() {
             @Override
             public void run() {
-                P7ZipApi.executeCommand(String.format("7z x '%s' '-o%s' -aoa", mInputFilePath, mOutputPath));
+                // P7ZipApi.executeCommand(String.format("7z x '%s' '-o%s' -aoa", mInputFilePath, mOutputPath));
                 Utils.delete(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/black-cache.7z"));
                 Utils.delete(new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS) + "/black-cache.7z.temp"));
                 getActivity().runOnUiThread(() -> {
@@ -118,9 +116,9 @@ public class LoaderFragment extends Fragment {
             }
         }.start();
     }
+    */
     
     public void afterDownload(){
     	Toast.makeText(getActivity(), "Игра успешно установлена!", Toast.LENGTH_SHORT).show();
-         
     }
 }
