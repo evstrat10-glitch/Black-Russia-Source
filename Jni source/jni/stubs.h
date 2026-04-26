@@ -1,6 +1,6 @@
 #pragma once
 
-namespace RAKlet {
+namespace RAkNet {
     class BitStream {
     public:
         void Write1();
