@@ -137,12 +137,12 @@
                     android:layout_marginTop="@dimen/_10sdp"
                     app:rcBackgroundColor="#40000000"
                     app:rcBackgroundPadding="0.0dip"
-                    app:rcMax="100.0"
-                    app:rcProgress="0.0"
+                    app:rcMax="100"
+                    app:rcProgress="0"
                     app:rcProgressColor="#ffce0e03"
                     app:rcRadius="@dimen/_100sdp"
                     app:rcReverse="false"
-                    app:rcSecondaryProgress="0.0"
+                    app:rcSecondaryProgress="@android:color/transparent"
                     app:rcSecondaryProgressColor="#fff75514" />
 
                 <TextView
