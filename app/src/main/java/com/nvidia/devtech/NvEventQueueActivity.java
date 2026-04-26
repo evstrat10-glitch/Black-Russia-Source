@@ -58,7 +58,7 @@ import com.byparad1st.game.core.DialogClientSettings;
 import com.byparad1st.game.gui.BrDialogWindow;
 import com.byparad1st.game.gui.BrNotification;
 import com.byparad1st.game.gui.Menu;
-import com.byparad1st.game.gui.ChooseServer;
+// import com.byparad1st.game.gui.ChooseServer;
 import com.byparad1st.game.gui.RadialMenu;
 import com.byparad1st.game.gui.Donate;
 import com.byparad1st.game.gui.parad1streg.regandlogin;
@@ -73,7 +73,7 @@ import com.byparad1st.game.gui.jbl.Jbl;
 import com.byparad1st.game.gui.PreDeath;
 import com.byparad1st.game.gui.Speedometer;
 import com.byparad1st.game.gui.HudManager;
-import com.byparad1st.game.gui.Keyboard;
+// import com.byparad1st.game.gui.Keyboard;
 import com.byparad1st.game.gui.br.HudHelper;
 
 import org.json.JSONException;
@@ -170,7 +170,7 @@ public abstract class NvEventQueueActivity
     private Speedometer mSpeedometer = null;
     private BrNotification mBrNotification = null;
     private Menu mMenu = null;
-    private ChooseServer mChooseServer = null;
+    // private ChooseServer mChooseServer = null;
     private RadialMenu mRadialMenu = null;
     private Donate mDonate = null;
     private AutoShop mAutoShop = null;
@@ -183,7 +183,7 @@ public abstract class NvEventQueueActivity
     private Inventory mInventory = null;
     private Jbl mJbl = null;
     private PreDeath mPreDeath = null;
-    private Keyboard mKeyboard = null;
+    // private Keyboard mKeyboard = null;
     private HudHelper mHelper = null;
 
     /* *
