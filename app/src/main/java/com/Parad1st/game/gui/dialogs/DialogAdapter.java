@@ -10,7 +10,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.byparad1st.game.R;
-import com.byparad1st.game.gui.util.MaskedEditText;
+// import com.byparad1st.game.gui.util.MaskedEditText;
 import com.byparad1st.game.gui.util.Utils;
 
 import java.util.ArrayList;
