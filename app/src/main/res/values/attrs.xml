@@ -105,6 +105,9 @@
     <attr name="rcStrokeWidth" format="dimension" />
     <attr name="rcStrokeColor" format="color" />
     <attr name="progress_start_color" format="color" />
+    <attr name="progress_stroke_cap" format="string" />
+<attr name="progress_stroke_width" format="dimension" />
+<attr name="progress_start_degree" format="float" />
     <attr name="rcProgressStyle" format="enum">
         <enum name="fill" value="0" />
         <enum name="stroke" value="1" />
