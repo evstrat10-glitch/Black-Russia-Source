@@ -21,8 +21,8 @@ import com.byparad1st.game.R;
 // import com.google.firebase.crashlytics.buildtools.reloc.org.apache.commons.cli.HelpFormatter;
 import com.nvidia.devtech.CustomEditText;
 import com.nvidia.devtech.NvEventQueueActivity;
-import com.pedromassango.doubleclick.DoubleClick;
-import com.pedromassango.doubleclick.DoubleClickListener;
+// import com.pedromassango.doubleclick.DoubleClick;
+// import com.pedromassango.doubleclick.DoubleClickListener;
 
 import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
