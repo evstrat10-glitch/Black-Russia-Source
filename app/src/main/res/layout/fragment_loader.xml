@@ -57,12 +57,12 @@
 		app:layout_constraintTop_toBottomOf="@+id/tv_play_black"
 		app:rcBackgroundColor="#25ffffff"
 		app:rcBackgroundPadding="0dp"
-		app:rcMax="100.0"
+		app:rcMax="100"
 		app:rcProgress="0"
 		app:rcProgressColor="@color/gradient1"
 		app:rcRadius="@dimen/_3sdp"
 		app:rcReverse="false"
-		app:rcSecondaryProgress="0.0"
+		app:rcSecondaryProgress="0"
 		app:rcSecondaryProgressColor="@color/gradient2" />
 
 	<TextView
