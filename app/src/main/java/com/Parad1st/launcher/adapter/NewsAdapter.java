@@ -17,7 +17,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.annotation.NonNull;
 
 import com.byparad1st.game.R;
-import com.byparad1st.launcher.activity.StoryActivity;
+// import com.byparad1st.launcher.activity.StoryActivity;
 import com.byparad1st.launcher.model.News;
 import java.util.ArrayList;
 
