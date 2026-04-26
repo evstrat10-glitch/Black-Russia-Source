@@ -86,4 +86,27 @@
     <declare-styleable name="SeekArcTheme">
         <attr name="seekArcStyle" format="reference"></attr>
     </declare-styleable>
+
+    <!-- Атрибуты для Slider (activity_story.xml) -->
+<attr name="sliderIndicatorEnabled" format="boolean" />
+<attr name="sliderIndicatorOrientation" format="enum">
+    <enum name="horizontal" value="0" />
+    <enum name="vertical" value="1" />
+</attr>
+<attr name="sliderIndicatorGravity" format="enum">
+    <enum name="top" value="0" />
+    <enum name="bottom" value="1" />
+    <enum name="left" value="2" />
+    <enum name="right" value="3" />
+</attr>
+<attr name="sliderIndicatorMarginBottom" format="dimension" />
+
+<!-- Атрибуты для RoundedImageView (item_news.xml) -->
+<attr name="riv_corner_radius" format="dimension" />
+
+<!-- Атрибуты для CircleProgressBar (item_server.xml) -->
+<attr name="progress_background_color" format="color" />
+<attr name="progress_end_color" format="color" />
+<attr name="progress_stroke_width" format="dimension" />
+<attr name="progress_start_color" format="color" />
     </resources>
