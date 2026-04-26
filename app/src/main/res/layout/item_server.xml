@@ -37,21 +37,15 @@
             android:layout_gravity="center_vertical"
             android:layout_marginRight="@dimen/_16sdp" >
 
-            <com.dinuscxj.progressbar.CircleProgressBar
-                android:id="@+id/progressBar"
-                android:layout_width="@dimen/_50sdp"
-                android:layout_height="@dimen/_50sdp"
-                android:layout_centerInParent="true"
-                app:drawBackgroundOutsideProgress="true"
-                app:progress_background_color="@color/white6"
-                app:progress_end_color="@color/blue"
-                app:progress_shader="linear"
-                app:progress_start_color="@color/blue"
-                app:progress_start_degree="-90"
-                app:progress_stroke_cap="square"
-                app:progress_stroke_width="@dimen/_5sdp"
-                app:progress_style="solid_line"
-                app:progress_text_color="@color/transparent" />
+           <com.dinuscxj.progressbar.CircleProgressBar
+    android:id="@+id/progressBar"
+    android:layout_width="@dimen/_50sdp"
+    android:layout_height="@dimen/_50sdp"
+    android:layout_centerInParent="true"
+    app:progress_background_color="@color/white6"
+    app:progress_end_color="@color/blue"
+    app:progress_start_color="@color/blue"
+    app:progress_stroke_width="@dimen/_5sdp" />
 
             <ImageView
                 android:id="@+id/bearPaw"
